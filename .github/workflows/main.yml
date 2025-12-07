@@ -1,4 +1,4 @@
-name: build JAVA application
+name: build JAVA application1
 on: # multiple triggers when this workflow can run
  workflow_dispatch: # also select which job to run
    inputs:  # user to select the jobname
