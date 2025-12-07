@@ -42,7 +42,7 @@ jobs:
     - name: Code Coverage using sonarcloud
       run: mvn -B verify sonar:sonar -Dsonar.projectKey=sonar-demo-org-november-2025_sonar-demo-org-november-2025 -Dsonar.organization=sonar-demo-org-november-2025 -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONAR_TOKEN
       env:
-       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
        # GITHUB_TOKEN: Automatically generated token for GitHub API authentication (with limited scope).
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN}}
 
